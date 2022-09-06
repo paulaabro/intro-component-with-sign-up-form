@@ -53,6 +53,7 @@ h1 {
 }
 
 .promo p {
+  width: 60%;
   font-size: 15px;
   line-height: 26px;
 }
@@ -163,4 +164,81 @@ button {
 .terms a {
   font-weight: 700;
   color: var(--red);
+}
+
+
+@media (min-width: 1100px) {
+  body {
+    min-height: 100vh;
+    background-image: url("./images/bg-intro-desktop.png");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .containter {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  main {
+    width: 1110px;
+    margin: 0;
+    text-align: left;
+
+    display: grid;
+    grid-template-columns: 525px 540px;
+    grid-template-areas:
+      ". promo"
+      "title form"
+      "description form";
+    gap: 24px 45px;
+  }
+
+  h1 {
+    grid-area: title;
+    align-self: end;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .description {
+    grid-area: description;
+    margin: 0;
+  }
+
+  .promo {
+    grid-area: promo;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 0;
+
+  }
+
+  .promo p {
+    width: 60%;
+  }
+
+  .form {
+    grid-area: form;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  input {
+    padding-left: 32px;
+  }
+
+  button {
+    text-align: center;
+  }
+
+  .terms {
+    line-height: 26px
+  }
+
 }
