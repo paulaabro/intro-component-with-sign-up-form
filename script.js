@@ -34,11 +34,24 @@ function isValidInput(input) {
 }
 
 function handleForm() {
-  const inputs = [firstName, lastName, email, password];
   const validation = inputs.map(processInput);
   if (!validation.includes(false)) {
     alert("Success!");
+    cleanInputs();
   }
+}
+
+function cleanInputs() {
+  inputs.forEach((input) => {
+    input.input.value = "";
+    if (input.div.classList.contains("fail")) {
+      input.div.classList.remove("fail");
+    }
+    
+    if (input.div.classList.contains("success")) {
+      input.div.classList.remove("success");
+    }
+  });
 }
 
 const firstName = {div: document.querySelector(".first-name"), name: "First Name", isEmail: false};
@@ -57,5 +70,6 @@ const password = {div: document.querySelector(".password"), name: "Password", is
 password.input = password.div.querySelector("input");
 password.err = password.div.querySelector(".err");
 
+const inputs = [firstName, lastName, email, password];
 const button = document.querySelector("button");
 button.addEventListener("click", handleForm);

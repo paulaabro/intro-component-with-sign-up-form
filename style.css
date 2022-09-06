@@ -87,6 +87,10 @@ input {
   padding-left: 20px;
 }
 
+input:focus {
+  border-color: var(--blue);
+}
+
 input::placeholder {
   font: 600 14px/26px 'Poppins', sans-serif;
   color: var(--dark-gray);
