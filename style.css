@@ -93,11 +93,47 @@ input::placeholder {
   opacity: 0.75
 }
 
-.err, .modal, ion-icon {
+.fail input {
+  border: 2px solid var(--red);
+  color: var(--red)
+}
+
+.fail input::placeholder {
+  opacity: 0;
+}
+
+.success input {
+  border: 2px solid var(--green);
+  color: var(--green)
+}
+
+.err, ion-icon {
   display: none;
 }
 
-/* TODO: .err .modal ion-icon */
+.fail {
+  position: relative;
+}
+
+.fail .err {
+  display: block;
+  font-weight: 500;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 16px;
+  text-align: right;
+  margin-top: 6px;
+  color: var(--red);
+}
+
+.fail ion-icon {
+  display: block;
+  color: var(--red);
+  font-size: 30px;
+  position: absolute;
+  top: 13px;
+  right: 17px;
+}
 
 button {
   background-color: var(--green);
