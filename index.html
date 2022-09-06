@@ -1,57 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <main>
-    <h1>Learn to code by watching others</h1>
-    <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-      but understanding how developers think is invaluable.</p>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
 
-    <div class="promo">
-      <p>Try it free 7 days then $20/mo. thereafter</p>
-    </div>
+    <main>
+      <div class="title">
 
-    <div class="form">
-      <div class="first-name">
-        <input type="text" placeholder="First Name" />
-        <p class="err hidden"></p>
+        <h1>Learn to code by watching others</h1>
+        <p class="description">See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+          but understanding how developers think is invaluable.</p>
       </div>
 
-      <div class="last-name">
-        <input type="text" placeholder="Last Name" />
-        <p class="err hidden"></p>
+      <div class="promo">
+        <p><strong>Try it free 7 days</strong> then<br />$20/mo. thereafter</p>
       </div>
 
-      <div class="email">
-        <input type="email" placeholder="Email Address" />
-        <p class="err hidden"></p>
+      <div class="form">
+        <div class="first-name">
+          <input type="text" placeholder="First Name" />
+          <p class="err"></p>
+          <ion-icon name=""></ion-icon>
+        </div>
+
+        <div class="last-name">
+          <input type="text" placeholder="Last Name" />
+          <p class="err"></p>
+          <ion-icon name=""></ion-icon>
+        </div>
+
+        <div class="email">
+          <input type="email" placeholder="Email Address" />
+          <p class="err"></p>
+          <ion-icon name=""></ion-icon>
+        </div>
+
+        <div class="password">
+          <input type="password" placeholder="Password" />
+          <p class="err"></p>
+          <ion-icon name=""></ion-icon>
+        </div>
+
+        <button type="submit" class="submit">Claim your free trial</button>
+        <p class="terms">By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>
       </div>
+    </main>
 
-      <div class="password">
-        <input type="password" placeholder="Password" />
-        <p class="err hidden"></p>
-      </div>
-
-      <button type="submit" class="submit">Claim your free trial</button>
-      <p>By clicking the button, you are agreeing to our <strong>Terms and Services</strong></p>
-    </div>
-
-  <div class="modal hidden">
-    <img src="./images/coder.jpg" alt="coder">
-    <!-- TODO: change message -->
-    <h2>Start learning now!</h2>
-  </div>
-  </main>
-</body>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
 </html>

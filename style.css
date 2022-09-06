@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root {
+  --red: #FF7979;
+  --green: #38CC8B;
+  --lilac: #BAB7D4;
+  --blue: #5E54A4;
+  --white: #FFF;
+  --dark-gray: #3D3B48;
+  --light-gray: #DEDEDE;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url("./images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--red);
+  color: var(--white);
+
+}
+
+main {
+  width: 87vw;
+  margin: 88px auto 68px;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 16px 0 64px;
+}
+
+.promo {
+  height: 88px;
+  background: var(--blue);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 24px;
+}
+
+.promo p {
+  font-size: 15px;
+  line-height: 26px;
+}
+
+.promo strong {
+  font-weight: 700;
+}
+
+.form {
+  background-color: var(--white);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.14688);
+  border-radius: 10px;
+  padding: 24px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+input, button {
+  width: 100%;
+  height: 56px;
+  border-radius: 5px;
+}
+
+input {
+  font: 600 14px/26px 'Poppins', sans-serif;
+  text-align: left;
+  color: var(--dark-gray);
+
+  border: 1px solid var(--light-gray);
+  padding-left: 20px;
+}
+
+input::placeholder {
+  font: 600 14px/26px 'Poppins', sans-serif;
+  color: var(--dark-gray);
+  opacity: 0.75
+}
+
+.err, .modal, ion-icon {
+  display: none;
+}
+
+/* TODO: .err .modal ion-icon */
+
+button {
+  background-color: var(--green);
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.0908818);
+
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 1px;
+}
+
+.terms {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+
+  text-align: center;
+
+  color: var(--lilac);
+}
+
+.terms a {
+  font-weight: 700;
+  color: var(--red);
+}
